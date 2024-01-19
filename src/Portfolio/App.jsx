@@ -6,13 +6,13 @@ import Stack from './Tools&Language/Tools&Language';
 
 function App() {
   return (
-    <div className=" general grid grid-rows-2 grid-flow-col gap-5">
-    <div className='row-span-4 col-span-1 flex justify-center bg-sky-500 '><Header /></div>
-    <div className='row-span-1 col-span-1 '><Profil /></div>
-    <div className='row-span-1 col-span-1  '><Stack /></div>
-    <div className='row-span-1 col-span-1'><MyButton /></div>
+    <div className=" general flex h-full">
+    <div className='  w-1/4 flex justify-center bg-sky-500 m-3 p-5 rounded-lg'><Header /></div>
+    <div className=' w-3/4 bg-sky-500 m-3 p-5 rounded-lg'><Profil /></div>
+    {/* <div className='row-span-1 col-span-1  '><Stack /></div> */}
+    {/* <div className='row-span-1 col-span-1'><MyButton /></div> */}
   </div>
 );
-}
+}""
 
 export default App
