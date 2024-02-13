@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import MyButton from '../CvButton/CvButton';
+
 
 function Header() {
   return (
