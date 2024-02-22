@@ -67,7 +67,7 @@ function Stack(props) {
   return (
     <div className="grid grid-rows-3 grid-flow-col ">
       <div className='row-span-1 col-span-2 flex justify-center ' >
-      <h3 className='text-center text-3xl' >Langages & Outils</h3>
+      <h1 className='text-center text-3xl' >Langages & Outils</h1>
       </div>
     
       
