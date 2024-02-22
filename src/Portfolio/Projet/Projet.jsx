@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-// Supposons que vous ayez un tableau d'objets représentant vos projets
+
 const projects = [
   {
     id: 1,
@@ -54,27 +54,61 @@ const projects = [
     id: 7,
     name: 'Blog Laravel',
     imageUrl: '/img/blog.png',
-    projectUrl: 'https://morpions-js.netlify.app/',
-    githubUrl: 'https://github.com/AnthonySemprini/Tic-Tac-Toe',
+    projectUrl: '',
+    githubUrl: 'https://github.com/AnthonySemprini/MyFirstLaravelProjectBlog',
     description: 'Le jeu de Morpion se joue sur une grille de 3x3 cases. Deux joueurs s\'affrontent et marquent à tour de rôle les cases de la grille avec leur symbole respectif, "X" pour le Joueur 1 et "O" pour le Joueur 2. Le gagnant est le premier joueur à aligner trois de ses symboles horizontalement, verticalement ou diagonalement. Si la grille est complètement remplie sans qu\'aucun joueur n\'ait aligné trois symboles, la partie est déclarée nulle.'
   },
   
 ];
 
 const Projet = () => {
+  const [currentPage, setCurrentPage] = useState(0);
+  const projectsPerPage = 2;
+
+  // Calculer le nombre total de pages
+  const pageCount = Math.ceil(projects.length / projectsPerPage);
+
+  // Calculer l'index du premier et du dernier projet de la page courante
+  const firstPageIndex = currentPage * projectsPerPage;
+  const lastPageIndex = firstPageIndex + projectsPerPage;
+
+  // Sélectionner les projets à afficher sur la page courante
+  const currentProjects = projects.slice(firstPageIndex, lastPageIndex);
+
   return (
-    <div className="flex flex-wrap justify-center gap-4 p-5">
-      {projects.map((project) => (
-        <div key={project.id} className="max-w-sm rounded overflow-hidden shadow-lg">
-          <img className="w-full" src={project.imageUrl} alt={project.name} />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">{project.name}</div>
-            <p>{project.description}</p>
-            <a href={project.projectUrl} className="text-blue-500 hover:text-blue-800" target="_blank" rel="noopener noreferrer">Voir le projet</a><br></br>
-            <a href={project.githubUrl} className="text-blue-500 hover:text-blue-800" target="_blank" rel="noopener noreferrer">Voir repository github</a>
+    <div>
+      <div className="flex flex-wrap justify-center gap-4 p-5">
+        {currentProjects.map((project) => ( // Remplacer 'projects' par 'currentProjects'
+          <div key={project.id} className="max-w-sm rounded overflow-hidden shadow-lg">
+            <img className="w-full" src={project.imageUrl} alt={project.name} />
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2">{project.name}</div>
+              <p>{project.description}</p>
+              {project.projectUrl && (
+                <a href={project.projectUrl} className="text-blue-500 hover:text-blue-800" target="_blank" rel="noopener noreferrer">Voir le projet</a>
+              )}
+              <br/>
+              <a href={project.githubUrl} className="text-blue-500 hover:text-blue-800" target="_blank" rel="noopener noreferrer">Voir le repository GitHub</a>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+      <div className="flex justify-center gap-4">
+        <button
+          className="px-4 py-2 rounded bg-blue-500 text-white"
+          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 0))}
+          disabled={currentPage === 0}
+        >
+          Précédent
+        </button>
+        <button
+          className="px-4 py-2 rounded bg-blue-500 text-white"
+          onClick={() => setCurrentPage((prev) => Math.min(prev + 1, pageCount - 1))}
+          disabled={currentPage === pageCount - 1}
+        >
+          Suivant
+        </button>
+      </div>
     </div>
   );
 };
