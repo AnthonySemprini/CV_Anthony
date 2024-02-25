@@ -18,8 +18,9 @@ function BurgerComponent() {
         <div className='z-100 bg-blueM text-amande text-xl ml-1 p-2 w-1/3 rounded absolute top-0'>
         <ul className=' '>
           <li><a href="#profil">Profil</a></li>
-          <li><a href="#competences">Skills</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projets">Projets</a></li>
+          <li><a href="#projets">Certification & Titre Pro</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div className='mt-5 h-10 flex justify-evenly'>
