@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 
 
-function Header() {
+function HeaderComponent() {
   return (
     <header className='p-5 '>
       <nav >
@@ -25,4 +25,4 @@ function Header() {
     </header>
   );
 }
-export default Header;
+export default HeaderComponent;

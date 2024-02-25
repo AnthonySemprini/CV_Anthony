@@ -87,7 +87,7 @@ const projects = [
 ];
 
 
-const Projet = () => {
+const ProjetComponent = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const projectsPerPage = 2;
 
@@ -150,4 +150,4 @@ const Projet = () => {
   );
 };
 
-export default Projet;
+export default ProjetComponent;
