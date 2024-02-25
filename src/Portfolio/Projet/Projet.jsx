@@ -89,14 +89,14 @@ const projects = [
 
 const Projet = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const projectsPerPage = 2;
+  const projectsPerPage = 4;
 
   const pageCount = Math.ceil(projects.length / projectsPerPage);
   const firstPageIndex = currentPage * projectsPerPage;
   const currentProjects = projects.slice(firstPageIndex, firstPageIndex + projectsPerPage);
 
   return (
-    <div>
+    <div className=''>
       <h1 className='text-center text-3xl' >Mes différents projets</h1>
       <div className="flex flex-wrap justify-center gap-4 p-5">
         {currentProjects.map((project, index) => (
@@ -127,7 +127,7 @@ const Projet = () => {
         >
           Précédent
         </button>
-        <span>Page {currentPage + 1} sur {pageCount}</span>
+        <span>{currentPage + 1} / {pageCount}</span>
         <button
           className="px-4 py-2 rounded bg-blueM text-amande hover:bg-amande hover:text-blueM border-2 border-blueM hover:border-2 hover:border-blueM transition duration-300"
           onClick={() => setCurrentPage((prev) => Math.min(prev + 1, pageCount - 1))}

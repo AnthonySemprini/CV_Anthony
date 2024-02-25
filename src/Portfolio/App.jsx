@@ -10,7 +10,7 @@ function App() {
   
   <div className=" general flex h-full bg-orangeRouge">
     <div className='  w-1/4 h-[99vh] flex justify-center bg-blueM m-1 p-5 rounded-lg'><Header /></div>
-    <div className='flex  w-3/4 h-[99vh] bg-amande  ml-0 mt-1 mr-1 mb-1 p-5 rounded-lg'><Projet /></div>
+    <div className='flex  w-3/4 h-full justify-center bg-amande  ml-0 mt-1 mr-1 mb-1 p-5 rounded-lg'><Projet /></div>
     {/* <div className='flex  w-3/4 h-[99vh] bg-amande  ml-0 mt-1 mr-1 mb-1 p-5 rounded-lg  '><Stack /></div> */}
     
   </div>
