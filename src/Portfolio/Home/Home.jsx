@@ -3,7 +3,7 @@ import MyButtonComponent from '../CvButton/CvButton';
 
 const user = {
   name: 'Anthony SEMPRINI',
-  description: 'Bonjour à tous, Je m\'appelle Anthony, un passionné de la programmation fraîchement sorti de l\'école. Mon parcours académique m\'a permis de développer une expertise solide dans le domaine du développement web, et je suis ravi de partager mes compétences avec vous. Je suis spécialisé dans les langages fondamentaux du web tels que HTML, CSS, PHP et JavaScript, ce qui me permet de créer des interfaces utilisateur dynamiques et attrayantes. Maîtrisant également le framework Symfony, j\'ai acquis une compréhension approfondie des bonnes pratiques de développement back-end. Actuellement, je me lance dans l\'apprentissage de React, un choix motivé par le désir de créer des applications web modernes et réactives. ',
+  description: 'Bonjour à tous, Je m\'appelle Anthony, un passionné de la programmation fraîchement sorti de l\'école. Mon parcours académique m\'a permis de développer une expertise solide dans le domaine du développement web, et je suis ravi de partager mes compétences avec vous. ',
   adresse: '53 rue de la charmille',
   cp: '67200',
   ville: 'STRASBOURG',

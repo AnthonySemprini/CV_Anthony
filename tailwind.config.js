@@ -15,7 +15,14 @@ export default {
         'orangeRouge': '#ff6e40',
         'mangue': '#ffc13b',
       },
+
+      screens: {
+        'tab': '950px',
+        'phone': '700px',
+      },
+
     },
   },
+
   plugins: [],
 }
