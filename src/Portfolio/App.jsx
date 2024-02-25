@@ -4,6 +4,7 @@ import BurgerComponent from './NavBurger/NavBurger';
 import MyButtonComponent from './CvButton/CvButton';
 import ProfilComponent from './Home/Home';
 import ProjetComponent from './Projet/Projet';
+
 import SkillsComponent from './Skills/Skills';
 
 function App() {

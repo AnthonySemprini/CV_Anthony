@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import MyButtonComponent from '../CvButton/CvButton';
+import TypewriterText from '../Writer/Writer';
 
 const user = {
   name: 'Anthony SEMPRINI',
@@ -15,13 +16,47 @@ const user = {
 };
 
 function ProfilComponent() {
+  
+  const [showFirst, setShowFirst] = useState(false);
+  const [showSecond, setShowSecond] = useState(false);
+  const [showThird, setShowThird] = useState(false); 
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const timer1 = setTimeout(() => setShowFirst(true), 0); // Commence après 0 seconde
+    const timer2 = setTimeout(() => setShowSecond(true), 1600); // Puis 1,6 secondes après le premier
+    const timer3 = setTimeout(() => setShowThird(true), 3500); // Puis 1,6 secondes après le deuxième
+
+    setTimeout(() => {
+      setShowButton(true);
+    }, 12550);
+
+
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+      clearTimeout(timer3);
+    };
+  }, []);
+
   return (
     <>
       <div className='flex flex-col justify-center'>
-        <h1 className='text-center text-blueM text-5xl p-5'>{user.name}</h1>
-        <h2 className='text-4xl text-blueM  p-5'>Dévellopeur Web</h2>
-        <p className='mx-5 text-xl text-blueM text-justify'>{user.description}</p>
-      <button className='m-20  bg-mangue border-4 border-orangeRouge  p-3 rounded-xl text-blueM font-bold'> <MyButtonComponent /></button>
+       
+        {showFirst && <TypewriterText text={user.name} speed={100}
+          style={{ color: 'rgb(30 61 89)', fontSize: '80px' }} />}
+
+        {showSecond && <TypewriterText text="Développeur Web" speed={100}
+          style={{ color: 'rgb(30 61 89)', fontSize: '50px' }} />}
+
+        {showThird && <TypewriterText text={user.description} speed={30}
+          style={{ color: 'rgb(30 61 89)', fontSize: '20px', textAlign:'justify' }} />}
+
+        {showButton && (
+          <div className='m-20 bg-mangue border-4 border-orangeRouge p-3 rounded-xl text-blueM font-bold text-center'>
+            <MyButtonComponent />
+          </div>
+        )}
       </div>
     </>
   );
