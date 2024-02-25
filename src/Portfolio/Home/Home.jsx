@@ -43,11 +43,11 @@ function ProfilComponent() {
     <>
       <div className='flex flex-col justify-center'>
        
-        {showFirst && <TypewriterText text={user.name} speed={100}
-          style={{ color: 'rgb(30 61 89)', fontSize: '80px' }} />}
+        {showFirst && <TypewriterText text={user.name} speed={100} 
+          style={{ color: 'rgb(30 61 89)', fontSize: '60px' }} />}
 
         {showSecond && <TypewriterText text="Développeur Web" speed={100}
-          style={{ color: 'rgb(30 61 89)', fontSize: '50px' }} />}
+          style={{ color: 'rgb(30 61 89)', fontSize: '40px' }} />}
 
         {showThird && <TypewriterText text={user.description} speed={30}
           style={{ color: 'rgb(30 61 89)', fontSize: '20px', textAlign:'justify' }} />}
