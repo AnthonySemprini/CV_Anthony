@@ -100,7 +100,7 @@ const ProjetComponent = () => {
 
       {/* Titre */}
 
-      <h1 className='text-center text-3xl' >Mes différents projets</h1>
+      <h2 className='text-center text-3xl' >Mes différents projets</h2>
 
       {/* Carte projet */}
 

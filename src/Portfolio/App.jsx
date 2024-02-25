@@ -13,7 +13,7 @@ function App() {
       <div className='w-3/4'>
         <div className='flex h-[99vh] bg-amande  ml-0 mt-1 mr-1 mb-1 p-5 rounded-lg  '><ProfilComponent /></div>
         <div className='flex justify-center bg-amande  ml-0 mt-1 mr-1 mb-1 p-5 rounded-lg'><ProjetComponent /></div>
-        <div className='flex h-[99vh] bg-amande  ml-0 mt-1 mr-1 mb-1 p-5 rounded-lg  '><SkillsComponent /></div>
+        <div className='flex justify-center h-[99vh] bg-amande  ml-0 mt-1 mr-1 mb-1 p-5 rounded-lg  '><SkillsComponent /></div>
     </div>
   </div>
   )
