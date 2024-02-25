@@ -89,27 +89,33 @@ const projects = [
 
 const Projet = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const projectsPerPage = 4;
+  const projectsPerPage = 2;
 
   const pageCount = Math.ceil(projects.length / projectsPerPage);
   const firstPageIndex = currentPage * projectsPerPage;
   const currentProjects = projects.slice(firstPageIndex, firstPageIndex + projectsPerPage);
 
   return (
-    <div className=''>
+    <div>
+
+      {/* Titre */}
+
       <h1 className='text-center text-3xl' >Mes différents projets</h1>
-      <div className="flex flex-wrap justify-center gap-4 p-5">
+
+      {/* Carte projet */}
+
+      <div className=" flex  flex-wrap justify-center gap-4 p-5">
         {currentProjects.map((project, index) => (
           <div key={project.id} className="custom-card-size max-w-sm rounded overflow-hidden shadow-lg transition duration-300 ease-in-out">
-            <span className="text-center text-lg font-semibold block p-2"># {firstPageIndex + index + 1} #</span>
-            <p align="center">
+            {/* <span className="text-center text-lg font-semibold block p-2"># {firstPageIndex + index + 1} #</span> */}
+              <h2 className="font-bold text-center text-xl m-2">{project.name}</h2>
+            <img className="w-full h-48 object-contain" src={project.imageUrl} alt={project.name} />
+            <div align="center">
               <a href="https://skillicons.dev">
                 <img className='my-2' src={ project.skills } />
               </a>
-            </p>
-            <img className="w-full h-48 object-contain" src={project.imageUrl} alt={project.name} />
-            <div className="px-6 py-4 min-h-[150px]">
-              <div className="font-bold text-xl mb-2">{project.name}</div>
+            </div>
+            <div className="px-6 py-4">
               <p className="text-gray-700 text-base">{project.description}<br></br><br></br><strong> Pour en savoir plus ↓</strong></p>
               {project.projectUrl && (
                 <a href={project.projectUrl} className="text-blue-500 hover:text-blue-800 inline-block mt-4" target="_blank" rel="noopener noreferrer">Tester le projet</a>
@@ -119,6 +125,9 @@ const Projet = () => {
           </div>
         ))}
       </div>
+
+      {/* Btn Prec & Suiv */}
+
       <div className="flex justify-center gap-4 mt-4">
         <button
           className="px-4 py-2 rounded bg-blueM text-amande hover:bg-amande hover:text-blueM border-2 border-blueM hover:border-2 hover:border-blueM transition duration-300"
@@ -136,6 +145,7 @@ const Projet = () => {
           Suivant
         </button>
       </div>
+
     </div>
   );
 };
