@@ -73,36 +73,33 @@ const generateStars = (value, maxValue = 5) => {
   return stars;
 };
 
+function SkillsComponent() {
+  return (
+    <div id="full" className='w-full flex flex-col items-center'>
+      {/* Titre */}
+      <h2 className='text-center text-3xl my-5'>Compétences</h2>
 
-  function SkillsComponent() {
-    return (
-      <div>
-
-        {/* Titre */}
-
-        <h2 className='text-center text-3xl'>Compétences</h2>
-
-        {/* Skills cartes */}
-
+      {/* Container pour les cartes */}
+      <div className='w-full px-4 flex flex-wrap justify-center md:justify-start'>
         {Skills.map((skill) => (
-          <div key={skill.id} className='grid grid-cols-4 gap-4 m-6 '>
-            <h3 className='text-2xl'>{skill.name}</h3>
-            <div align="center">
+          <div key={skill.id} className='w-full md:w-1/2 p-2'>
+            <div className='flex flex-col items-center  p-4 '>
+              <h3 className='text-2xl mb-2'>{skill.name}</h3>
               <a href="https://skillicons.dev">
-                <img className='my-2' src={ skill.kills } />
+                <img className='my-2' alt={`Icone de ${skill.name}`} src={skill.kills} />
               </a>
+              <ul className='list-disc'>
+                {skill.list.map((item, index) => (
+                  <li key={index} className='ml-4'>{`${item.name} ${generateStars(item.value)}`}</li>
+                ))}
+              </ul>
             </div>
-            <ul>
-              {skill.list.map((item, index) => (
-                <li key={index}>{`${item.name} ${generateStars(item.value)}`}</li>
-              ))}
-            </ul>
           </div>
         ))}
-
-        
       </div>
-    );
-  }
+    </div>
+  );
+}
+
 
 export default SkillsComponent;

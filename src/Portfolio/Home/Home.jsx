@@ -21,7 +21,7 @@ function ProfilComponent() {
         <h1 className='text-center text-blueM text-5xl p-5'>{user.name}</h1>
         <h2 className='text-4xl text-blueM  p-5'>Dévellopeur Web</h2>
         <p className='mx-5 text-xl text-blueM text-justify'>{user.description}</p>
-      <button className='mx-20 mt-20 bg-mangue border-4 border-orangeRouge  p-3 rounded-xl text-blueM font-bold'> <MyButtonComponent /></button>
+      <button className='m-20  bg-mangue border-4 border-orangeRouge  p-3 rounded-xl text-blueM font-bold'> <MyButtonComponent /></button>
       </div>
     </>
   );
