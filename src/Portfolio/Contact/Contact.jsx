@@ -40,7 +40,7 @@ function ContactComponent() {
                     onChange={handleChange} />
             </div>
             <div>
-                <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700">Numéro de téléphone (facultatif)</label>
+                <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700">Numéro téléphone (facultatif)</label>
                 <input type="tel" name="phoneNumber" id="phoneNumber"
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     onChange={handleChange} />
