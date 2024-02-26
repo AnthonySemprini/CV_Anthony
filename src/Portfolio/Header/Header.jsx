@@ -4,6 +4,7 @@ import ProfilComponent from '../Home/Home';
 import ProjetComponent from '../Projet/Projet';
 import CertifComponent from '../Certif/Certif';
 import SkillsComponent from '../Skills/Skills';
+import ContactComponent from '../Contact/Contact';
 
 
 function HeaderComponent() {
