@@ -7,9 +7,9 @@ import ReactFullpage from '@fullpage/react-fullpage';
 
 const FullpageComponent = () => (
   <ReactFullpage
-    // options de fullpage.js
     licenseKey = {'YOUR_KEY_HERE'} // Vous pouvez obtenir une clé sur le site officiel de fullPage.js
     scrollingSpeed = {1000} /* Options ici */
+    anchors={['profil', 'skills', 'projets', 'certif']}
 
     render={({ state, fullpageApi }) => {
       return (
