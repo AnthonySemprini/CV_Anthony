@@ -9,7 +9,7 @@ const FullpageComponent = () => (
   <ReactFullpage
     licenseKey = {'YOUR_KEY_HERE'} // Vous pouvez obtenir une clé sur le site officiel de fullPage.js
     scrollingSpeed = {1000} /* Options ici */
-    anchors={['profil', 'skills', 'projets', 'certif']}
+    anchors={['profil1', 'skills1', 'projets1', 'certif1']}
 
     render={({ state, fullpageApi }) => {
       return (
