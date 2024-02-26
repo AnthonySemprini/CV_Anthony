@@ -22,11 +22,11 @@ function BurgerComponent() {
                 <div className=' bg-blueM text-amande text-xl m-1 p-2 w-60 h-80  rounded absolute top-0'>
                     <ul className='mx-3 '>
                         <li onClick={closeMenu} className='text-end'><a  href="#" >X</a></li>
-                        <li onClick={closeMenu} className='text-center mb-2'><a href="#profil">Profil</a></li>
-                        <li onClick={closeMenu} className='text-center mb-2'><a href="#skills">Skills</a></li>
-                        <li onClick={closeMenu} className='text-center mb-2'><a href="#projets">Projets</a></li>
-                        <li onClick={closeMenu} className='text-center mb-2'><a href="#projets">Certif & Titre Pro</a></li>
-                        <li onClick={closeMenu} className='text-center mb-2'><a href="#contact">Contact</a></li>
+                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#profil">Profil</a></li>
+                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#skills">Compétences</a></li>
+                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#projets">Projets</a></li>
+                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#projets">Certif & Titre Pro</a></li>
+                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#contact">Contact</a></li>
                     </ul>
                     <div className='mt-5 h-10 flex justify-evenly'>
 

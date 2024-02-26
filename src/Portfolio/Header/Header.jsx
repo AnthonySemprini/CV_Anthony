@@ -9,11 +9,11 @@ function HeaderComponent() {
       <nav>
         <ul className='flex flex-col items-center justify-center gap-5 '>
           <img className='rounded-3xl border-4 border-amande  ' src="./img/photo.jpg" />
-          <li><a href="#profil" className='text-amande text-center text-xl'>Profil</a></li>
-          <li><a href="#skills" className='text-amande text-center text-xl'>Skills</a></li>
-          <li><a href="#projets" className='text-amande text-center text-xl'>Projets</a></li>
-          <li><a href="#projets" className='text-amande text-center text-xl'>Certification & Titre Pro</a></li>
-          <li><a href="#contact" className='text-amande text-center text-xl'>Contact</a></li>
+          <li><a href="#profil" className='text-amande poppins-regular text-center text-xl'>Profil</a></li>
+          <li><a href="#skills" className='text-amande poppins-regular text-center text-xl'>Skills</a></li>
+          <li><a href="#projets" className='text-amande poppins-regular text-center text-xl'>Projets</a></li>
+          <li><a href="#projets" className='text-amande poppins-regular text-center text-xl'>Certif & Titre Pro</a></li>
+          <li><a href="#contact" className='text-amande poppins-regular text-center text-xl'>Contact</a></li>
         </ul>
           <div className='mt-5 h-10 flex justify-evenly'>
 

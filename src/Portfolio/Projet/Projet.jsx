@@ -119,7 +119,7 @@ const ProjetComponent = () => {
 
       {/* Titre */}
 
-      <h2 className='text-center text-3xl' >Mes différents projets</h2>
+      <h2 className='montserrat text-center text-blueM text-3xl font-bold my-5' >Mes différents projets</h2>
 
       {/* Carte projet */}
 
@@ -127,7 +127,7 @@ const ProjetComponent = () => {
         {currentProjects.map((project, index) => (
           <div key={project.id} className="custom-card-size max-w-sm rounded overflow-hidden shadow-lg transition duration-300 ease-in-out">
             {/* <span className="text-center text-lg font-semibold block p-2"># {firstPageIndex + index + 1} #</span> */}
-              <h2 className="font-bold text-center text-xl m-2">{project.name}</h2>
+              <h3 className="montserrat text-center text-3xl text-blueM font-bold mb-4">{project.name}</h3>
             <img className="w-full h-48 object-contain" src={project.imageUrl} alt={project.name} />
             <div align="center">
               <a href="https://skillicons.dev">
@@ -135,11 +135,11 @@ const ProjetComponent = () => {
               </a>
             </div>
             <div className="px-6 py-4">
-              <p className="text-gray-700 text-base">{project.description}<br></br><br></br><strong> Pour en savoir plus ↓</strong></p>
+              <p className="poppins-regular text-blueM text-base">{project.description}<br></br><br></br><strong> Pour en savoir plus ↓</strong></p>
               {project.projectUrl && (
-                <a href={project.projectUrl} className="text-blue-500 hover:text-blue-800 inline-block mt-4" target="_blank" rel="noopener noreferrer">Tester le projet</a>
+                <a href={project.projectUrl} className="poppins-regular text-blue-500 hover:text-blueM inline-block mt-4" target="_blank" rel="noopener noreferrer">Tester le projet</a>
               )}
-              <br></br><a href={project.githubUrl} className="text-blue-500 hover:text-blue-800 inline-block mt-2" target="_blank" rel="noopener noreferrer">Consulter le repository GitHub</a>
+              <br></br><a href={project.githubUrl} className="poppins-regular text-blue-500 hover:text-blueM inline-block mt-2" target="_blank" rel="noopener noreferrer">Consulter le repository GitHub</a>
             </div>
           </div>
         ))}
@@ -149,7 +149,7 @@ const ProjetComponent = () => {
 
       <div className="flex justify-center gap-4 mt-4">
         <button
-          className="px-4 py-2 rounded bg-blueM text-amande hover:bg-amande hover:text-blueM border-2 border-blueM hover:border-2 hover:border-blueM transition duration-300"
+          className="poppins-regular px-4 py-2 rounded bg-blueM text-amande hover:bg-amande hover:text-blueM border-2 border-blueM hover:border-2 hover:border-blueM transition duration-300"
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 0))}
           disabled={currentPage === 0}
         >
@@ -157,7 +157,7 @@ const ProjetComponent = () => {
         </button>
         <span>{currentPage + 1} / {pageCount}</span>
         <button
-          className="px-4 py-2 rounded bg-blueM text-amande hover:bg-amande hover:text-blueM border-2 border-blueM hover:border-2 hover:border-blueM transition duration-300"
+          className="poppins-regular px-4 py-2 rounded bg-blueM text-amande hover:bg-amande hover:text-blueM border-2 border-blueM hover:border-2 hover:border-blueM transition duration-300"
           onClick={() => setCurrentPage((prev) => Math.min(prev + 1, pageCount - 1))}
           disabled={currentPage === pageCount - 1}
         >

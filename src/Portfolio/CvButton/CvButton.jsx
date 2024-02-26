@@ -6,7 +6,7 @@ function MyButton() {
     }
     return (
       <div className="download">
-       <a onClick={handleClick} href="./img/Anthony_Semprini_CV.pdf" download>DOWNLOAD CV</a>
+       <a onClick={handleClick} href="./img/Anthony_Semprini_CV.pdf" className='montserrat' download>DOWNLOAD CV</a>
   </div>
     );
   }

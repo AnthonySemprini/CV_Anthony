@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MyButtonComponent from '../CvButton/CvButton';
 import TypewriterText from '../Writer/Writer';
+import './Home.css';
 
 const user = {
   name: 'Anthony SEMPRINI',
@@ -44,13 +45,13 @@ function ProfilComponent() {
       <div className='flex flex-col justify-center'>
        
         {showFirst && <TypewriterText text={user.name} speed={100} 
-          style={{ color: 'rgb(30 61 89)', fontSize: '60px' }} />}
+          className="montserrat text-blueM text-7xl mb-3 mt-12"  />}
 
         {showSecond && <TypewriterText text="Développeur Web" speed={100}
-          style={{ color: 'rgb(30 61 89)', fontSize: '40px' }} />}
+          className="montserrat text-blueM text-5xl mb-12" />}
 
         {showThird && <TypewriterText text={user.description} speed={30}
-          style={{ color: 'rgb(30 61 89)', fontSize: '20px', textAlign:'justify' }} />}
+          className="poppins-regular text-blueM text-justify text-base"   />}
 
         {showButton && (
           <div className='m-20 bg-mangue border-4 border-orangeRouge p-3 rounded-xl text-blueM font-bold text-center'>

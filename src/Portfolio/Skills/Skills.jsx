@@ -59,20 +59,20 @@ function SkillsComponent() {
   return (
     <div id="full" className='w-full flex flex-col items-center'>
       {/* Titre */}
-      <h2 className='text-center text-3xl my-5'>Compétences</h2>
+      <h2 className=' montserrat text-center text-blueM text-4xl font-bold my-5'>Compétences</h2>
 
       {/* Container pour les cartes */}
       <div className='w-full px-4 flex flex-wrap justify-center md:justify-start'>
         {Skills.map((skill) => (
           <div key={skill.id} className='w-full md:w-1/2 p-2'>
             <div className='flex flex-col items-center  p-4 '>
-              <h3 className='text-3xl font-bold mb-2'>{skill.name}</h3>
+              <h3 className='montserrat text-3xl text-blueM font-bold mb-4'>{skill.name}</h3>
 
               <div className='flex flex-wrap justify-center items-center gap-6'>
                 {skill.list.map((item, index) => (
                   <div key={index} className='flex flex-col items-center'>
                     <img className='w-16' src={item.value} alt={item.name} />
-                    <p className='text-center text-xl font-bold'>{item.name}</p>
+                    <p className='text-center  poppins-regular text-blueM'>{item.name}</p>
                   </div>
                 ))}
               </div>

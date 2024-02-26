@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function TypewriterText({ text, speed, style }) {
+function TypewriterText({ text, speed,className, style }) {
   const [displayedText, setDisplayedText] = useState('');
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function TypewriterText({ text, speed, style }) {
     }
   }, [displayedText, text, speed ]);
 
-  return <span style={style}>{displayedText}</span>;
+  return <span className={className} style={style}>{displayedText}</span>;
   
 }
 
