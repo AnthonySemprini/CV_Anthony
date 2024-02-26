@@ -1,9 +1,9 @@
 import './App.css';
 import HeaderComponent from './Header/Header';
 import BurgerComponent from './NavBurger/NavBurger';
-import MyButtonComponent from './CvButton/CvButton';
 import ProfilComponent from './Home/Home';
 import ProjetComponent from './Projet/Projet';
+import CertifComponent from './Certif/Certif';
 
 import SkillsComponent from './Skills/Skills';
 
@@ -17,7 +17,7 @@ function App() {
         <div id="profil" className='flex h-[99vh] bg-amande   m-1 p-5 rounded-lg  '><ProfilComponent /></div>
         <div id="skills" className='flex justify-center bg-amande  m-1 p-5 rounded-lg  '><SkillsComponent /></div>
         <div id="projets" className='flex justify-center bg-amande  m-1 p-5 rounded-lg'><ProjetComponent /></div>
-        {/* <div id="certif" className='flex justify-center bg-amande  m-1 p-5 rounded-lg'><CertifComponent /></div> */}
+        <div id="certif" className='flex justify-center bg-amande  m-1 p-5 rounded-lg'><CertifComponent /></div>
         {/* <div id="contact" className='flex justify-center bg-amande  m-1 p-5 rounded-lg'><ContactComponent /></div> */}
     </div>
   </div>
