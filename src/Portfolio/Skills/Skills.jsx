@@ -62,10 +62,10 @@ function SkillsComponent() {
       <h2 className=' montserrat text-center text-blueM text-4xl font-bold my-5 tab:block hidden'>Compétences</h2>
 
       {/* Container pour les cartes */}
-      <div className='w-full px-4 flex flex-wrap justify-center md:justify-start'>
+      <div className='w-full px-2 flex flex-wrap justify-center md:justify-start'>
         {Skills.map((skill) => (
           <div key={skill.id} className='w-full md:w-1/2 p-2'>
-            <div className='flex flex-col items-center  p-4 '>
+            <div className='flex flex-col items-center  p-2 '>
               <h3 className='montserrat text-3xl text-blueM font-bold mb-4'>{skill.name}</h3>
 
               <div className='flex flex-wrap justify-center items-center gap-6'>
