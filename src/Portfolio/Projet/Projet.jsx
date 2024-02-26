@@ -21,7 +21,7 @@ const projects = [
     skills: 'https://skillicons.dev/icons?i=git,php,laravel,js,vue,tailwind',
     projectUrl: '',
     githubUrl: 'https://github.com/AnthonySemprini/MyFirstLaravelProjectBlog',
-    description: 'MyFirstLaravelProjectBlog est un système de gestion de blog qui permet la publication, la modification et la suppression d\'articles par un admin, offre la lecture publique et le \'like\' par les utilisateurs authentifiés, construit avec Laravel, Tailwind CSS, et Vue 3.'
+    description: 'Blog permetant la publication, la modification et la suppression d\'articles par un admin, offre la lecture publique et le \'like\' par les utilisateurs authentifiés, construit avec Laravel, Tailwind CSS, et Vue 3.'
   },
 
   {
@@ -31,7 +31,7 @@ const projects = [
     skills: 'https://skillicons.dev/icons?i=git,html,css,vscode',
     projectUrl: 'https://landing-page-kucra.netlify.app/',
     githubUrl: 'https://github.com/AnthonySemprini/exo-kucra',
-    description: 'Kucra est une landing page élégante et moderne conçue en cour de ma formation chez elan formation en suivant une maquette. Ce modèle responsive s\'adapte parfaitement à tous les appareils grâce à ses feuilles de style CSS spécifiques.'
+    description: 'Kucra est une landing page élégante conçue en cour de ma formation chez elan formation en suivant une maquette. Ce modèle responsive s\'adapte parfaitement à tous les appareils grâce à ses feuilles de style CSS.'
   },
 
   {
@@ -94,7 +94,7 @@ const ProjetComponent = () => {
   useEffect(() => {
     // vérifie largeur de l'écran 
     const checkScreenSize = () => {
-      if (window.matchMedia("(max-width: 750px)").matches) {
+      if (window.matchMedia("(max-width: 1150px)").matches) {
         setProjectsPerPage(1); //  moins  750px larg
       } else {
         setProjectsPerPage(2); 
@@ -123,19 +123,19 @@ const ProjetComponent = () => {
 
       {/* Carte projet */}
 
-      <div className=" flex  flex-wrap justify-center gap-4 p-5">
+      <div className=" flex  flex-wrap justify-center gap-4 p-">
         {currentProjects.map((project, index) => (
           <div key={project.id} className="custom-card-size max-w-sm rounded overflow-hidden shadow-lg transition duration-300 ease-in-out">
             {/* <span className="text-center text-lg font-semibold block p-2"># {firstPageIndex + index + 1} #</span> */}
               <h3 className="montserrat text-center text-3xl text-blueM font-bold mb-4">{project.name}</h3>
-            <img className="w-full h-48 object-contain" src={project.imageUrl} alt={project.name} />
+            <img className="w-full h-44 object-contain" src={project.imageUrl} alt={project.name} />
             <div align="center">
               <a href="https://skillicons.dev">
                 <img className='my-2' src={ project.skills } />
               </a>
             </div>
-            <div className="px-6 py-4">
-              <p className="poppins-regular text-blueM text-base">{project.description}<br></br><br></br><strong> Pour en savoir plus ↓</strong></p>
+            <div className="px-6 py-2">
+              <p className="poppins-regular text-blueM text-justify text-base">{project.description}<br></br><br></br><strong> Pour en savoir plus ↓</strong></p>
               {project.projectUrl && (
                 <a href={project.projectUrl} className="poppins-regular text-blue-500 hover:text-blueM inline-block mt-4" target="_blank" rel="noopener noreferrer">Tester le projet</a>
               )}

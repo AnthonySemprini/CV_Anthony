@@ -10,3 +10,11 @@
     font-weight: 700;
     font-style: normal;
   }
+
+  .section {
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  

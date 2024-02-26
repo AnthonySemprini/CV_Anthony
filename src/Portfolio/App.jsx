@@ -1,26 +1,19 @@
 import './App.css';
 import HeaderComponent from './Header/Header';
 import BurgerComponent from './NavBurger/NavBurger';
-import ProfilComponent from './Home/Home';
-import ProjetComponent from './Projet/Projet';
-import CertifComponent from './Certif/Certif';
 
-import SkillsComponent from './Skills/Skills';
+import FullpageComponent from './Fullpage/Fullpage';
 
 function App() {
   return (
     
-    <div className=" general flex  h-full bg-orangeRouge">
-      <div className='  w-1/4 min-w-72 h-[99vh] sticky top-1  justify-center bg-blueM m-1 p-5 rounded-lg hidden tab:block'><HeaderComponent /></div>
+    <div className=" general flex  h-full">
+      <div className='  w-1/4 min-w-72 h-[100vh] sticky top-0 justify-center bg-blueM  p-5 hidden tab:block'><HeaderComponent /></div>
       <div className='tab:w-3/4 w-[100vw]'>
       <div className=' fixed  rounded-lg tab:hidden'><BurgerComponent /></div>
-        <div id="profil" className='flex h-[99vh] bg-amande   m-1 p-5 rounded-lg  '><ProfilComponent /></div>
-        <div id="skills" className='flex justify-center bg-amande  m-1 p-5 rounded-lg  '><SkillsComponent /></div>
-        <div id="projets" className='flex justify-center bg-amande  m-1 p-5 rounded-lg'><ProjetComponent /></div>
-        <div id="certif" className='flex justify-center bg-amande  m-1 p-5 rounded-lg'><CertifComponent /></div>
-        {/* <div id="contact" className='flex justify-center bg-amande  m-1 p-5 rounded-lg'><ContactComponent /></div> */}
-    </div>
-  </div>
+        <div><FullpageComponent /></div>
+      </div>
+      </div>
   )
 }
 
