@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Projet.css';
 
 
@@ -88,9 +88,28 @@ const projects = [
 
 
 const ProjetComponent = () => {
-  const [currentPage, setCurrentPage] = useState(0);
-  const projectsPerPage = 2;
+  const [currentPage, setCurrentPage] = useState(2);
+  const [projectsPerPage, setProjectsPerPage] = useState(2);
 
+  useEffect(() => {
+    // vérifie largeur de l'écran 
+    const checkScreenSize = () => {
+      if (window.matchMedia("(max-width: 750px)").matches) {
+        setProjectsPerPage(1); //  moins  750px larg
+      } else {
+        setProjectsPerPage(2); 
+      }
+    };
+
+    checkScreenSize();
+
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
+  }, []);
+  
   const pageCount = Math.ceil(projects.length / projectsPerPage);
   const firstPageIndex = currentPage * projectsPerPage;
   const currentProjects = projects.slice(firstPageIndex, firstPageIndex + projectsPerPage);
