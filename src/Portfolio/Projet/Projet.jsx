@@ -119,7 +119,7 @@ const ProjetComponent = () => {
 
       {/* Titre */}
 
-      <h2 className='montserrat text-center text-blueM text-4xl font-bold my-5' >Mes différents projets</h2>
+      <h2 className='montserrat text-center text-blueM text-4xl font-bold my-5 tab:block hidden' >Mes différents projets</h2>
 
       {/* Carte projet */}
 

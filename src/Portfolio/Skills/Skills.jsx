@@ -59,7 +59,7 @@ function SkillsComponent() {
   return (
     <div id="full" className='w-full flex flex-col items-center'>
       {/* Titre */}
-      <h2 className=' montserrat text-center text-blueM text-4xl font-bold my-5'>Compétences</h2>
+      <h2 className=' montserrat text-center text-blueM text-4xl font-bold my-5 tab:block hidden'>Compétences</h2>
 
       {/* Container pour les cartes */}
       <div className='w-full px-4 flex flex-wrap justify-center md:justify-start'>
