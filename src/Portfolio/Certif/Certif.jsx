@@ -19,6 +19,22 @@ function CertifComponent() {
 
     return (
         <div className="container mx-auto px-2">
+
+            <div className="forma-section">
+                <h2 className="text-2xl font-bold text-center my-3">Mes Formations</h2>
+                <div className="grid md:grid-cols-3 gap-3">
+                    {forma.map((form, index) => (
+                        <div key={`form-${index}`} className="detail-view p-4 shadow-md rounded-lg bg-gray-200">
+                            <h3 className="font-bold">{form.name}</h3>
+                            <p className="text-sm">{form.orga}</p>
+                            <span className={`inline-block mt-2 py-1 px-3 rounded-full text-xs font-medium ${form.statut === 'Obtenu' ? 'bg-green-200 text-green-800' : 'bg-yellow-200 text-yellow-800'}`}>
+                                {form.statut}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            
             <div className="certif-section">
                 <h2 className="text-2xl font-bold text-center my-3">Mes Certifications</h2>
                 <div className="grid md:grid-cols-3 gap-3 mb-10">
@@ -35,20 +51,7 @@ function CertifComponent() {
                 </div>
             </div>
 
-            <div className="forma-section">
-                <h2 className="text-2xl font-bold text-center my-3">Mes Formations</h2>
-                <div className="grid md:grid-cols-3 gap-3">
-                    {forma.map((form, index) => (
-                        <div key={`form-${index}`} className="detail-view p-4 shadow-md rounded-lg bg-gray-200">
-                            <h3 className="font-bold">{form.name}</h3>
-                            <p className="text-sm">{form.orga}</p>
-                            <span className={`inline-block mt-2 py-1 px-3 rounded-full text-xs font-medium ${form.statut === 'Obtenu' ? 'bg-green-200 text-green-800' : 'bg-yellow-200 text-yellow-800'}`}>
-                                {form.statut}
-                            </span>
-                        </div>
-                    ))}
-                </div>
-            </div>
+
         </div>
     );
 }
