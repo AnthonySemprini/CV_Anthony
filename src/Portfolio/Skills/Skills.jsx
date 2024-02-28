@@ -19,7 +19,10 @@ const Skills = [
     list: [
       { name: 'Html', value: 'https://skillicons.dev/icons?i=html' },
       { name: 'Css', value: 'https://skillicons.dev/icons?i=css' },
-      { name: 'Javascript', value: 'https://skillicons.dev/icons?i=js' }
+      { name: 'Javascript', value: 'https://skillicons.dev/icons?i=js' },
+      { name: 'React.js', value: 'https://skillicons.dev/icons?i=react' },
+      { name: 'Bootstrap', value: 'https://skillicons.dev/icons?i=bootstrap' },
+       { name: 'Tailwind', value: 'https://skillicons.dev/icons?i=tailwind' }
     ]
   },
 
@@ -28,29 +31,31 @@ const Skills = [
     name: 'Back-End',
     list: [
       { name: 'Php', value: 'https://skillicons.dev/icons?i=php' },
-      { name: 'Sql', value: 'https://skillicons.dev/icons?i=mysql' }
-    ]
-  },
-
-
-  {
-    id: 4,
-    name: 'Frameworks',
-    list: [
+      { name: 'MySql', value: 'https://skillicons.dev/icons?i=mysql' },
       { name: 'Symfony', value: 'https://skillicons.dev/icons?i=symfony' },
-      { name: 'Laravel', value: 'https://skillicons.dev/icons?i=laravel' },
-      { name: 'Bootstrap', value: 'https://skillicons.dev/icons?i=bootstrap' },
-      { name: 'Tailwind', value: 'https://skillicons.dev/icons?i=tailwind' }
+      { name: 'Laravel', value: 'https://skillicons.dev/icons?i=laravel' }
     ]
   },
 
-  {
-    id: 5,
-    name: 'Librairies',
-    list: [
-      { name: 'React.js', value: 'https://skillicons.dev/icons?i=react' }
-    ]
-  },
+
+  //{
+  //   id: 4,
+  //   name: 'Frameworks',
+  //   list: [
+  //     { name: 'Symfony', value: 'https://skillicons.dev/icons?i=symfony' },
+  //     { name: 'Laravel', value: 'https://skillicons.dev/icons?i=laravel' },
+  //     { name: 'Bootstrap', value: 'https://skillicons.dev/icons?i=bootstrap' },
+  //     { name: 'Tailwind', value: 'https://skillicons.dev/icons?i=tailwind' }
+  //   ]
+  // },
+
+  //{
+  //   id: 5,
+  //   name: 'Librairies',
+  //   list: [
+  //     { name: 'React.js', value: 'https://skillicons.dev/icons?i=react' }
+  //   ]
+  // },
 
 ];
 
