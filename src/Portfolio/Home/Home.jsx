@@ -45,10 +45,10 @@ function ProfilComponent() {
       <div className='flex flex-col justify-center'>
        
         {showFirst && <TypewriterText text={user.name} speed={100} 
-          className="montserrat text-blueM text-7xl mb-3"  />}
+          className="montserrat text-blueM lg:text-7xl text-4xl mb-3"  />}
 
         {showSecond && <TypewriterText text="Développeur Web" speed={100}
-          className="montserrat text-blueM text-5xl mb-12" />}
+          className="montserrat text-blueM lg:text-5xl text-3xl mb-12" />}
 
         {showThird && <TypewriterText text={user.description} speed={30}
           className="poppins-regular text-blueM text-justify text-base"   />}
