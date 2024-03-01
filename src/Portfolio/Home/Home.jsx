@@ -45,7 +45,7 @@ function ProfilComponent() {
       <div className='flex flex-col justify-center'>
        
         {showFirst && <TypewriterText text={user.name} speed={100} 
-          className="montserrat text-blueM text-7xl mb-3 mt-12"  />}
+          className="montserrat text-blueM text-7xl mb-3"  />}
 
         {showSecond && <TypewriterText text="Développeur Web" speed={100}
           className="montserrat text-blueM text-5xl mb-12" />}
@@ -54,7 +54,8 @@ function ProfilComponent() {
           className="poppins-regular text-blueM text-justify text-base"   />}
 
         {showButton && (
-          <div className='m-20 bg-mangue border-4 border-orangeRouge p-3 rounded-xl text-blueM font-bold text-center'>
+          <div className='m-20 poppins-regular px-4 py-2 rounded bg-blueM text-amande hover:bg-amande hover:text-blueM border-2 border-blueM hover:border-2 hover:border-blueM transition duration-300 text-center'>
+       
             <MyButtonComponent />
           </div>
         )}
