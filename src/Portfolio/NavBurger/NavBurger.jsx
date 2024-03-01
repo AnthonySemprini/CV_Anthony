@@ -25,7 +25,7 @@ function BurgerComponent() {
                         <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#profil1">Profil</a></li>
                         <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#skills1">Compétences</a></li>
                         <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#projets1">Projets</a></li>
-                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#certif1">Certif & Titre Pro</a></li>
+                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#certif1">Qualifications</a></li>
                         <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#contact1">Contact</a></li>
                     </ul>
                     <div className='mt-5 h-10 flex justify-evenly'>

@@ -3,6 +3,9 @@ import './Certif.css';
 
 function CertifComponent() {
     const certifications = {
+        Titre_Professionnel: [
+           { name: 'Développeur Web et Web mobile', date: 'Décembre 2023', statut: 'Obtenu' },
+       ],
      L$atelier_RGPD_Cnil: [
         {name: 'Module 1 : Le RGPD et ses notions clés', date: 'Février 2024', statut: 'Obtenu' },
         { name: 'Module 2 : LES PRINCIPES DE LA PROTECTION DES DONNÉES', date: 'Février 2024', statut: 'Obtenu' },
@@ -22,7 +25,7 @@ function CertifComponent() {
     ],
     };
 
-    const [openedOrga, setOpenedOrga] = useState("FreeCodeCamp");
+    const [openedOrga, setOpenedOrga] = useState("Titre_Professionnel");
 
     const toggleOrga = (orga) => {
         if (openedOrga === orga) {
@@ -35,7 +38,7 @@ function CertifComponent() {
     return (
         <div className="container mx-auto px-2">
             <div className="certif-section">
-                <h2 className="text-2xl montserrat text-blueM font-bold text-center my-3">Mes Certifications</h2>
+                <h2 className="text-4xl montserrat text-blueM font-bold text-center my-3">Qualifications</h2>
                 {Object.entries(certifications).map(([orga, certifs], index) => (
                     <div key={index} className="orga-view my-4 p-4 shadow-md rounded-lg bg-gray-100 cursor-pointer" onClick={() => toggleOrga(orga)}>
                         <h3 className="montserrat text-blueM font-bold">
