@@ -125,17 +125,17 @@ const ProjetComponent = () => {
 
       <div className=" flex  flex-wrap justify-center gap-4 p-">
         {currentProjects.map((project, index) => (
-          <div key={project.id} className="custom-card-size max-w-sm rounded overflow-hidden shadow-lg transition duration-300 ease-in-out">
+          <div key={project.id} className="custom-card-size max-w-sm rounded overflow-hidden  transition duration-300 ease-in-out">
             {/* <span className="text-center text-lg font-semibold block p-2"># {firstPageIndex + index + 1} #</span> */}
               <h3 className="montserrat text-center text-3xl text-blueM font-bold mb-4">{project.name}</h3>
             <img className="w-full h-44 object-contain" src={project.imageUrl} alt={project.name} />
             <div align="center">
               <a href="https://skillicons.dev">
-                <img className='my-2' src={ project.skills } />
+                <img className='my-2  ' src={ project.skills } />
               </a>
             </div>
             <div className="px-6 py-2">
-              <p className="poppins-regular text-blueM text-justify text-base">{project.description}<br></br><br></br><strong> Pour en savoir plus ↓</strong></p>
+              <p className="poppins-regular text-blueM text-justify text-base">{project.description}<br></br><strong> Pour en savoir plus ↓</strong></p>
               {project.projectUrl && (
                 <a href={project.projectUrl} className="poppins-regular text-blue-500 hover:text-blueM inline-block mt-4" target="_blank" rel="noopener noreferrer">Tester le projet</a>
               )}
