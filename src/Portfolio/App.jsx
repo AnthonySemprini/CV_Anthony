@@ -1,8 +1,8 @@
 import './App.css';
 import HeaderComponent from './Header/Header';
 import BurgerComponent from './NavBurger/NavBurger';
-
 import FullpageComponent from './Fullpage/Fullpage';
+
 
 function App() {
   return (

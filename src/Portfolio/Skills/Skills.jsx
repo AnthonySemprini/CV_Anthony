@@ -37,26 +37,6 @@ const Skills = [
     ]
   },
 
-
-  //{
-  //   id: 4,
-  //   name: 'Frameworks',
-  //   list: [
-  //     { name: 'Symfony', value: 'https://skillicons.dev/icons?i=symfony' },
-  //     { name: 'Laravel', value: 'https://skillicons.dev/icons?i=laravel' },
-  //     { name: 'Bootstrap', value: 'https://skillicons.dev/icons?i=bootstrap' },
-  //     { name: 'Tailwind', value: 'https://skillicons.dev/icons?i=tailwind' }
-  //   ]
-  // },
-
-  //{
-  //   id: 5,
-  //   name: 'Librairies',
-  //   list: [
-  //     { name: 'React.js', value: 'https://skillicons.dev/icons?i=react' }
-  //   ]
-  // },
-
 ];
 
 
