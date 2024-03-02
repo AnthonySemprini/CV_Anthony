@@ -8,11 +8,13 @@ function CertifComponent() {
        ],
      L$atelier_RGPD_Cnil: [
         {name: 'Module 1 : Le RGPD et ses notions clés', date: 'Février 2024', statut: 'Obtenu' },
-        { name: 'Module 2 : LES PRINCIPES DE LA PROTECTION DES DONNÉES', date: 'Février 2024', statut: 'Obtenu' },
+        { name: 'Module 2 : Les principes de la protection des données', date: 'Février 2024', statut: 'Obtenu' },
+        { name: 'Module 3 : Les résponsabilités des acteurs', date: 'Mars 2024', statut: 'Obtenu' },
     ],
      Sololearn: [
         { name: 'Introduction to HTML',date:'Janvier 2023', statut: 'Obtenu' },
         { name: 'Introduction to CSS',date:'Mars 2023', statut: 'Obtenu' },
+        { name: 'PHP',date:'Mars 2024', statut: 'Obtenu' },
 
     ],
      FreeCodeCamp: [
