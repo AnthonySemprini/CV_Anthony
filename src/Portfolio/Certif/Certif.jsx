@@ -43,7 +43,7 @@ function CertifComponent() {
                 <h2 className="text-4xl montserrat text-blueM font-bold text-center my-3">Qualifications</h2>
                 {Object.entries(certifications).map(([orga, certifs], index) => (
                     <div key={index} className="orga-view my-4 p-4 shadow-md rounded-lg bg-gray-100 cursor-pointer" onClick={() => toggleOrga(orga)}>
-                        <h3 className="montserrat text-blueM font-bold">
+                        <h3 className="montserrat text-xl text-blueM font-bold">
                             {orga.replace(/_/g, ' ').replace(/\$/g, "'")}
                             <span className="float-right transform rotate-90">
                                 {openedOrga === orga ? '▼' : '▶︎'}
@@ -53,7 +53,7 @@ function CertifComponent() {
                             <div className="certif-details mt-4 text-sm poppins-regular text-blueM">
                                 {certifs.map((cert, index) => (
                                     <div key={index} className="mt-2">
-                                        <p className='poppins-regular'>{cert.name}</p>
+                                        <p className='poppins-regular'><strong>{cert.name}</strong></p>
                                         <p className='poppins-regular'>{cert.date}</p>
                                         <span className={`inline-block mt-2 py-1 px-3 rounded-full text-xs font-medium ${cert.statut === 'Obtenu' ? 'bg-green-200 text-green-800' : 'bg-yellow-200 text-yellow-800'}`}>
                                             {cert.statut}

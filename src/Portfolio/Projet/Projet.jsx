@@ -123,7 +123,7 @@ const ProjetComponent = () => {
 
       {/* Carte projet */}
 
-      <div className=" flex  flex-wrap justify-center gap-4 p-">
+      <div className=" flex  flex-wrap justify-center gap-4 ">
         {currentProjects.map((project, index) => (
           <div key={project.id} className="custom-card-size max-w-sm rounded overflow-hidden  transition duration-300 ease-in-out">
             {/* <span className="text-center text-lg font-semibold block p-2"># {firstPageIndex + index + 1} #</span> */}
@@ -147,24 +147,31 @@ const ProjetComponent = () => {
 
       {/* Btn Prec & Suiv */}
 
-      <div className="flex justify-center gap-4 mt-4">
-        <button
-          className="poppins-regular px-4 py-2 rounded bg-blueM text-amande hover:bg-amande hover:text-blueM border-2 border-blueM hover:border-2 hover:border-blueM transition duration-300"
-          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 0))}
-          disabled={currentPage === 0}
-        >
-          Précédent
-        </button>
-        <span>{currentPage + 1} / {pageCount}</span>
-        <button
-          className="poppins-regular px-4 py-2 rounded bg-blueM text-amande hover:bg-amande hover:text-blueM border-2 border-blueM hover:border-2 hover:border-blueM transition duration-300"
-          onClick={() => setCurrentPage((prev) => Math.min(prev + 1, pageCount - 1))}
-          disabled={currentPage === pageCount - 1}
-        >
-          Suivant
-        </button>
-      </div>
-
+      <div className="flex items-center justify-center space-x-2">
+  <button
+    className="poppins-regular px-4 py-2 rounded bg-blueM text-amande hover:bg-amande hover:text-blueM border-2 border-blueM hover:border-2 hover:border-blueM transition duration-300"
+    onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 0))}
+    disabled={currentPage === 0}
+  >
+  <i class="fa-solid fa-arrow-left"></i>
+  </button>
+  
+  {/* Cercles représentant les pages */}
+  {Array.from({ length: pageCount }, (_, index) => (
+    <div
+      key={index}
+      className={`h-4 w-4 rounded-full ${currentPage === index ? 'bg-amande border border-blueM' : 'bg-blueM'} transition duration-300`}
+    ></div>
+  ))}
+  
+  <button
+    className="poppins-regular px-4 py-2 rounded bg-blueM text-amande hover:bg-amande hover:text-blueM border-2 border-blueM hover:border-2 hover:border-blueM transition duration-300"
+    onClick={() => setCurrentPage((prev) => Math.min(prev + 1, pageCount - 1))}
+    disabled={currentPage === pageCount - 1}
+  >
+  <i class="fa-solid fa-arrow-right"></i>
+  </button>
+</div>
     </div>
   );
 };
