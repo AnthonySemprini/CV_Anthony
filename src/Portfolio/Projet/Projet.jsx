@@ -126,7 +126,7 @@ const ProjetComponent = () => {
       <div className=" flex  flex-wrap justify-center gap-4 ">
         {currentProjects.map((project, index) => (
           <div key={project.id} className="custom-card-size max-w-sm rounded overflow-hidden  transition duration-300 ease-in-out">
-              <h3 className="montserrat text-center text-3xl text-blueM font-bold mb-4">{project.name}</h3>
+              <h3 className="montserrat text-center text-2xl text-blueM font-bold mb-4">{project.name}</h3>
             <img className="w-full h-44 object-contain" src={project.imageUrl} alt={project.name} />
             <div align="center">
               <a href="https://skillicons.dev">

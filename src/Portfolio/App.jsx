@@ -6,6 +6,7 @@ import ProjetComponent from './Projet/Projet';
 import CertifComponent from './Certif/Certif';
 import SkillsComponent from './Skills/Skills';
 import ContactComponent from './Contact/Contact';
+import FooterComponent from './Footer/Footer';
 //import FullpageComponent from './Fullpage/Fullpage';
 
 
@@ -14,13 +15,14 @@ function App() {
     
     <div className=" general flex  h-full">
       <div className='  w-1/4 min-w-72 h-[100vh] z-10 sticky top-0 justify-center bg-blueM  p-5 hidden tab:block'><HeaderComponent /></div>
-      <div className='  top-0 z-20 fixed rounded-lg tab:hidden'><BurgerComponent /></div>
+      <div className='  top-0 left-0 z-20 fixed rounded-lg tab:hidden'><BurgerComponent /></div>
       <div className='tab:w-3/4 w-[100vw]'>
       <section id="profil" className='section flex  bg-amande p-5  '><ProfilComponent /></section>
         <section id="skills" className='section flex  bg-amande p-5   '><SkillsComponent /></section>
         <section id="projets" className='section flex  bg-amande p-5 '><ProjetComponent /></section>
         <section id="certif" className='section flex  bg-amande p-5 '><CertifComponent /></section>
-        <div id="contact" className='section flex bg-amande p-5 '><ContactComponent /></div>
+        <section id="contact" className='section flex bg-amande p-5 '><ContactComponent /></section>
+        <section id="footer" className=' flex bg-blueM p-5 tab:hidden'><FooterComponent /></section>
       </div>
       </div>
   )

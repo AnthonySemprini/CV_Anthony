@@ -13,8 +13,8 @@ const ContactComponent = () => {
             <li className='poppins-regular text-blueM lg:text-xl test-l mb-2 hover:underline'><a  href="mailto:semprini.anthony@gmail.com" target='_blank'><i class="fa-solid fa-envelope"></i> semprini.anthony@gmail.com</a></li>
             <li className='poppins-regular text-blueM lg:text-xl test-l mb-2 hover:underline' ><a  href="https://github.com/AnthonySemprini" target='_blank'><i className="fa-brands fa-github"></i> github.com/AnthonySemprini</a></li>
             <br></br>
-            <li className="poppins-regular text-blueM lg:text-xl test-l mb-2"><strong><i class="fa-solid fa-house"></i></strong> Strasbourg, FRANCE</li>
-            <li className="poppins-regular text-blueM lg:text-xl test-l mb-2"><strong><i class="fa-solid fa-phone"></i></strong> +33 6 06 65 03 92</li>
+            <li className="tab:block hidden poppins-regular text-blueM lg:text-xl test-l mb-2"><strong><i class="fa-solid fa-house"></i></strong> Strasbourg, FRANCE</li>
+            <li className="tab:block hidden poppins-regular text-blueM lg:text-xl test-l mb-2"><strong><i class="fa-solid fa-phone"></i></strong> +33 6 06 65 03 92</li>
           </ul>
         </div>
     </div>
