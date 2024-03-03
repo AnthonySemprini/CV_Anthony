@@ -119,15 +119,14 @@ const ProjetComponent = () => {
 
       {/* Titre */}
 
-      <h2 className='montserrat text-center text-blueM text-4xl font-bold my-5 hidden lg:block' >Mes différents projets</h2>
+      <h2 className='montserrat text-center text-blueM text-4xl font-bold my-10' >Mes différents projets</h2>
 
       {/* Carte projet */}
 
       <div className=" flex  flex-wrap justify-center gap-4 ">
         {currentProjects.map((project, index) => (
           <div key={project.id} className="custom-card-size max-w-sm rounded overflow-hidden  transition duration-300 ease-in-out">
-            {/* <span className="text-center text-lg font-semibold block p-2"># {firstPageIndex + index + 1} #</span> */}
-              <h3 className="montserrat text-center text-3xl text-blueM font-bold mb-4 hidden lg:block">{project.name}</h3>
+              <h3 className="montserrat text-center text-3xl text-blueM font-bold mb-4">{project.name}</h3>
             <img className="w-full h-44 object-contain" src={project.imageUrl} alt={project.name} />
             <div align="center">
               <a href="https://skillicons.dev">

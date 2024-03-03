@@ -2,7 +2,7 @@
 .menu-content.closed {
     display: none;
   }
-  
+
   .menu-content.open {
     display: block;
   }

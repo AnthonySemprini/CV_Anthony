@@ -42,7 +42,7 @@ function CertifComponent() {
             <div className="certif-section">
                 <h2 className="text-4xl montserrat text-blueM font-bold text-center my-3">Qualifications</h2>
                 {Object.entries(certifications).map(([orga, certifs], index) => (
-                    <div key={index} className="orga-view my-4 p-4 shadow-md rounded-lg bg-gray-100 cursor-pointer" onClick={() => toggleOrga(orga)}>
+                    <div key={index} className="orga-view my-6 p-6 shadow-md rounded-lg bg-gray-100 cursor-pointer" onClick={() => toggleOrga(orga)}>
                         <h3 className="montserrat text-xl text-blueM font-bold">
                             {orga.replace(/_/g, ' ').replace(/\$/g, "'")}
                             <span className="float-right transform rotate-90">

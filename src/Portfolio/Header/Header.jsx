@@ -1,10 +1,5 @@
 import React from 'react';
 import './Header.css';
-import ProfilComponent from '../Home/Home';
-import ProjetComponent from '../Projet/Projet';
-import CertifComponent from '../Certif/Certif';
-import SkillsComponent from '../Skills/Skills';
-import ContactComponent from '../Contact/Contact';
 
 
 function HeaderComponent() {
@@ -14,11 +9,11 @@ function HeaderComponent() {
       <nav>
         <ul className='flex flex-col items-center justify-center gap-5 '>
           <img className='rounded-3xl border-4 border-amande  ' src="./img/photo.jpg" />
-          <li><a href="#profil1" className='text-amande poppins-regular text-center text-xl'>Profil</a></li>
-          <li><a href="#skills1" className='text-amande poppins-regular text-center text-xl'>Compétences</a></li>
-          <li><a href="#projets1" className='text-amande poppins-regular text-center text-xl'>Projets</a></li>
-          <li><a href="#certif1" className='text-amande poppins-regular text-center text-xl'>Qualifications</a></li>
-          <li><a href="#contact1" className='text-amande poppins-regular text-center text-xl'>Contact</a></li>
+          <li><a href="#profil" className='text-amande poppins-regular text-center text-xl'>Profil</a></li>
+          <li><a href="#skills" className='text-amande poppins-regular text-center text-xl'>Compétences</a></li>
+          <li><a href="#projets" className='text-amande poppins-regular text-center text-xl'>Projets</a></li>
+          <li><a href="#certif" className='text-amande poppins-regular text-center text-xl'>Qualifications</a></li>
+          <li><a href="#contact" className='text-amande poppins-regular text-center text-xl'>Contact</a></li>
         </ul>
           <div className='mt-5 h-10 flex justify-evenly'>
 

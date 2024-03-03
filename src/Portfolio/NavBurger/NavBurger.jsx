@@ -11,7 +11,7 @@ function BurgerComponent() {
     return (
         <>
             {/* Bouton pour ouvrir/fermer le menu */}
-            <button className=" z-10 absolut top-0 flex justify-center items-center menu-burger-button w-12 h-12 rounded bg-blueM m-2" onClick={() => setIsOpen(!isOpen)}>
+            <button className=" z-10  flex justify-center items-center menu-burger-button w-12 h-12 rounded bg-blueM m-2" onClick={() => setIsOpen(!isOpen)}>
                 <svg className="w-10 h-10 text-amande" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
@@ -22,11 +22,11 @@ function BurgerComponent() {
                 <div className=' bg-blueM text-amande text-xl m-1 p-2 w-60 h-80  rounded absolute top-0'>
                     <ul className='mx-3 '>
                         <li onClick={closeMenu} className='text-end'><a  href="#" >X</a></li>
-                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#profil1">Profil</a></li>
-                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#skills1">Compétences</a></li>
-                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#projets1">Projets</a></li>
-                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#certif1">Qualifications</a></li>
-                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#contact1">Contact</a></li>
+                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#profil">Profil</a></li>
+                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#skills">Compétences</a></li>
+                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#projets">Projets</a></li>
+                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#certif">Qualifications</a></li>
+                        <li onClick={closeMenu} className='text-center .poppins-regular mb-2'><a href="#contact">Contact</a></li>
                     </ul>
                     <div className='mt-5 h-10 flex justify-evenly'>
 
