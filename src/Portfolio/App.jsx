@@ -16,7 +16,7 @@ function App() {
       <div className='  w-1/4 min-w-72 h-[100vh] z-10 sticky top-0 justify-center bg-blueM  p-5 hidden tab:block'><HeaderComponent /></div>
       <div className='  top-0 z-20 fixed rounded-lg tab:hidden'><BurgerComponent /></div>
       <div className='tab:w-3/4 w-[100vw]'>
-      <section id="profil" className='section flex h-screen bg-amande p-5  '><ProfilComponent /></section>
+      <section id="profil" className='section flex  bg-amande p-5  '><ProfilComponent /></section>
         <section id="skills" className='section flex  bg-amande p-5   '><SkillsComponent /></section>
         <section id="projets" className='section flex  bg-amande p-5 '><ProjetComponent /></section>
         <section id="certif" className='section flex  bg-amande p-5 '><CertifComponent /></section>

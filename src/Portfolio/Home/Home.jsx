@@ -63,7 +63,7 @@ function ProfilComponent() {
       <div className='flex flex-col justify-center tab:items-start items-center'>
        
         {showFirst && <TypewriterText text={user.name} speed={100} 
-          className="montserrat text-blueM lg:text-6xl text-3xl mt-32 mb-6"  />}
+          className="montserrat text-blueM lg:text-6xl text-3xl mt-12 mb-6"  />}
     
         {showSecond && <TypewriterText text={user.job} speed={100}
           className="montserrat text-blueM lg:text-5xl text-2xl mb-6" />}
