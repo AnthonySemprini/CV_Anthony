@@ -27,6 +27,7 @@ function ProfilComponent() {
   
   const [showFirst, setShowFirst] = useState(false);
   const [showSecond, setShowSecond] = useState(false);
+  const [showTel, setShowTel] = useState(false);
   const [showThird, setShowThird] = useState(false); 
   const [showFor, setShowFor] = useState(false); 
   const [showFive, setShowFive] = useState(false); 
@@ -36,19 +37,21 @@ function ProfilComponent() {
   useEffect(() => {
     const timer1 = setTimeout(() => setShowFirst(true), 0); // Commence après 0 seconde
     const timer2 = setTimeout(() => setShowSecond(true), 1600); // Puis 1,6 secondes après le premier
-    const timer3 = setTimeout(() => setShowThird(true), 3500); // Puis 1,6 secondes après le deuxième
-    const timer4 = setTimeout(() => setShowFor(true), 4300); // Puis 1,6 secondes après le deuxième
-    const timer5 = setTimeout(() => setShowFive(true), 13000); // Puis 1,6 secondes après le deuxième
-    const timer6 = setTimeout(() => setShowSix(true), 20000); // Puis 1,6 secondes après le deuxième
+    const timer2T = setTimeout(() => setShowTel(true), 3500); // Puis 1,6 secondes après le premier
+    const timer3 = setTimeout(() => setShowThird(true), 3600); // Puis 1,6 secondes après le deuxième
+    const timer4 = setTimeout(() => setShowFor(true), 4400); // Puis 1,6 secondes après le deuxième
+    const timer5 = setTimeout(() => setShowFive(true), 13100); // Puis 1,6 secondes après le deuxième
+    const timer6 = setTimeout(() => setShowSix(true), 20100); // Puis 1,6 secondes après le deuxième
 
     setTimeout(() => {
       setShowButton(true);
-    }, 24000);
+    }, 24100);
 
 
     return () => {
       clearTimeout(timer1);
       clearTimeout(timer2);
+      clearTimeout(timer2T);
       clearTimeout(timer3);
       clearTimeout(timer4);
       clearTimeout(timer5);
@@ -68,7 +71,7 @@ function ProfilComponent() {
         {showSecond && <TypewriterText text={user.job} speed={100}
           className="montserrat text-blueM lg:text-5xl text-2xl mb-6" />}
 
-        <img className='rounded-3xl border-4 h-auto w-44 tab:hidden border-blueM my-6 ' src={user.photo}></img>
+        {showTel && <img className='rounded-3xl border-4 h-auto w-44 tab:hidden border-blueM my-6 ' src={user.photo}></img>}
 
         {showThird && <TypewriterText text={user.description1} speed={30}
           className="poppins-regular text-blueM text-justify text-base"   />}
