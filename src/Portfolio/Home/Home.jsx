@@ -7,6 +7,7 @@ import './Home.css';
 const user = {
   name: 'Anthony SEMPRINI',
   job: 'Développeur Web',
+  photo: './img/photo.jpg',
   description1: 'Bonjour à tous', 
   description2:'Mon parcours m\'a doté d\'une expérience solide en développement web, avec une prédilection pour le PHP. J\'ai acquis une maîtrise approfondie des frameworks Symfony et Laravel, qui me permettent de construire des applications robustes et évolutives.',
   description3:'Côté front-end, je suis compétent en JavaScript, CSS et j\'utilise avec aisance des frameworks tels que Tailwind et Bootstrap, pour créer des interfaces utilisateur attractives et réactives.',
@@ -59,13 +60,15 @@ function ProfilComponent() {
 
   return (
     <>
-      <div className='flex flex-col justify-center'>
+      <div className='flex flex-col justify-center '>
        
         {showFirst && <TypewriterText text={user.name} speed={100} 
           className="montserrat text-blueM lg:text-6xl text-3xl mb-3"  />}
     
         {showSecond && <TypewriterText text={user.job} speed={100}
           className="montserrat text-blueM lg:text-5xl text-2xl mb-6" />}
+
+        <img className='rounded-3xl border-4 h-auto w-44 tab:hidden border-blueM my-6 ' src={user.photo}></img>
 
         {showThird && <TypewriterText text={user.description1} speed={30}
           className="poppins-regular text-blueM text-justify text-base"   />}
