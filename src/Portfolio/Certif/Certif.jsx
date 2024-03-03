@@ -22,7 +22,7 @@ function CertifComponent() {
         { name: 'Responsive web Design', date: ' Février 2024', statut: 'Obtenu' },
         { name: 'Front End Development Libraries', date: '', statut: 'En cours' },
     ],
-     Google_Career_Certificates: [
+     Google_Certificates: [
         { name: 'Fondamentaux de la cybersécurité', date: '', statut: 'En cours' },
     ],
     };
